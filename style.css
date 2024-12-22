@@ -1,0 +1,159 @@
+:root {
+  --dark-blue: #2d314d;
+  --Lime-Green: hsl(136, 65%, 51%);
+  --Bright-Cyan: hsl(192, 70%, 51%);
+  --Grayish-Blue: hsl(233, 8%, 62%);
+  --Light-Grayish-Blue: hsl(220, 16%, 96%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+  --White: #ffffff;
+}
+
+.gradient-color {
+  background: rgb(49, 211, 92);
+  background: linear-gradient(
+    107deg,
+    rgba(49, 211, 92, 1) 0%,
+    rgba(43, 183, 218, 1) 100%
+  );
+}
+html,
+body {
+  font-family: 'Public Sans', serif;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.navbar {
+  z-index: 1;
+  background-color: var(--White);
+}
+.navbar-nav {
+  margin: auto; /* Center the navigation links */
+}
+.right-button {
+  color: var(--White);
+  border: none;
+  border-radius: 50rem;
+  display: block;
+}
+#hero {
+  background-color: var(--Very-Light-Gray);
+}
+#hero-mobile {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h5 {
+  color: var(--dark-blue);
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+small {
+  color: var(--Grayish-Blue);
+}
+
+.mockup-img {
+  height: 45rem;
+  position: absolute;
+  top: -50px;
+  right: -80px;
+}
+
+.intro-desktop {
+  width: 50rem;
+  position: absolute;
+  right: -130px;
+  top: -80px;
+}
+
+#features {
+  background-color: var(--Light-Grayish-Blue);
+}
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+}
+
+#article {
+  background-color: var(--Very-Light-Gray);
+}
+.card img {
+  object-fit: cover;
+}
+#footer {
+  background-color: var(--dark-blue);
+}
+.footer-link {
+  color: var(--Light-Grayish-Blue);
+}
+.footer-link:hover {
+  color: var(--Lime-Green);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Lime-Green);
+}
+
+@media (max-width: 1150px) {
+  .intro-desktop {
+    width: 47rem;
+  }
+  .mockup-img {
+    height: 40rem;
+    right: -50px;
+  }
+}
+
+@media (max-width: 992px) {
+  body {
+    text-align: center;
+  }
+  .right-button {
+    display: none;
+  }
+  #hero {
+    display: none;
+  }
+  #hero-mobile {
+    display: block;
+  }
+  .intro-mobile {
+    height: 35rem;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+  }
+  .mockup-img-mobile {
+    position: relative;
+    top: -280px;
+  }
+}
+
+@media (min-width: 360px) {
+  .intro-mobile {
+    height: 80%;
+  }
+  .mockup-img-mobile {
+    top: -250px;
+  }
+}
+@media (max-width: 767px) {
+  .intro-mobile {
+    height: 60%;
+  }
+  .mockup-img-mobile {
+    top: -220px;
+  }
+}
